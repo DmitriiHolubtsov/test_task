@@ -53,6 +53,7 @@ export const Form: FC<SeachFormProps> = ({ onSearch }) => {
       handleSubmit={handleSubmit}
       register={register}
       errors={errors}
+      withoutFilter
     />
   );
 };

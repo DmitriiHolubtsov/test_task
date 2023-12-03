@@ -46,8 +46,7 @@
             user-select: none;
 
             &:last-child {
-                padding: 0;
-                width: toRem(48);
+                text-align: center;
             }
         }
     }
@@ -97,6 +96,7 @@
         min-width: auto;
         width: toRem(48);
         padding: 0;
+        margin: 0 auto;
         border-color: transparent;
 
         [data-theme="dark"] & {

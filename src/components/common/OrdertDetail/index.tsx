@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { FC, ReactNode } from 'react';
 import { MinorLinkButton } from 'ui/components/Button';
 import { ScrollBlock } from '../ScrollBlock';
+import { ArrowRight } from 'components/icons/ArrowIcons';
 
 import s from './OrderDetail.module.scss';
 
@@ -31,6 +32,7 @@ export const OrderDetailTypes: FC<OrderDetailTypesProps> = ({
               {type.isLink ? (
                 <MinorLinkButton className={s.type_name} href={type.href || ''}>
                   {type.name}
+                  <ArrowRight/>
                 </MinorLinkButton>
               ) : (
                 <div className={s.type_name}>
@@ -155,6 +157,36 @@ export const OrderInfo: FC<OrderInfoProps> = ({
           orderDetails
         )}
       </div>
+    </div>
+  );
+};
+
+export interface IOrderUsersInfo {
+  email: string;
+  fullName: string;
+  type: string;
+  avatarURL: string;
+}
+
+export interface IOrderUsers {
+  users: (IOrderUsersInfo | null)[];
+}
+
+export const OrderPersonsInfo: FC<IOrderUsers> = ({ users }) => {
+  return (
+    <div className={s.usersWrapper}>
+      {users.map((user, index) => (
+        <div className={s.user} key={index}>
+          <span>{user?.type}</span>
+          <div className={s.userInfo}>
+            <img src={user?.avatarURL} alt={user?.fullName} />
+            <div className={s.userData}>
+              <span>{user?.fullName}</span>
+              <span>{user?.email}</span>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

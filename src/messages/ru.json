@@ -571,13 +571,19 @@
       "level": "Рівень",
       "confident_lvl": "Рівень впевненості:",
       "profile": "Профіль",
+      "dashboard": "Дашбоард",
       "messages": "Повідомлення",
-      "bought_roducts": "Придбані продукти",
+      "sections": "Розділи",
+      "seller": "Продавець",
+      "buyers": "Покупці",
+      "financial": "Фінанси",
       "achievement": "Досягнення",
+      "security": "Безпека",
+      "report": "Повідомити про помилку",
+      "logout": "Вийти",
+      "bought_roducts": "Придбані продукти",
       "payment": "Платіж",
       "notifications": "Сповіщення",
-      "security": "Безпека",
-      "logout": "Вийти",
       "Seller": {
         "financial_balance": "Фінансовий баланс",
         "sales_offers": "Продажі та пропозиції",
@@ -622,6 +628,7 @@
       "successfully_updated": "Успішно оновлено"
     },
     "Messages": {
+      "title": "Розмови",
       "search_conversation": "Пошук розмови",
       "all_messages": "Всі",
       "unread_messages": "Непрочитані",
@@ -630,6 +637,18 @@
       "select_converstation_subtitle": "Виберіть розмову та почніть чат",
       "no_converstation": "Немає розмов",
       "no_converstation_subtitle": "Ой! Поки що немає розмов, Досліджуйте пропозиції та почніть чат із продавцями"
+    },
+    "Sections": {
+      "title": "Розділи",
+      "empty": "Данні відсутні"
+    },
+    "SalesOffers": {
+      "title": "Продавець",
+      "empty_title": "Данні відсутні" 
+    },
+    "Buyers": {
+      "title": "Покупці",
+      "no_buyers": "Немає покупців"
     },
     "BoughtProducts": {
       "title": "Куплені продукти",
@@ -681,7 +700,15 @@
     },
     "Achievement": {
       "title": "Досягнення",
+      "empty": "Немає досягнень",
       "of": "з"
+    },
+    "Financial": {
+      "title": "Фінанси",
+      "Empty": {
+        "title": "У вас немає оплати!",
+        "subtitle": "Ви ще не робили оплату."
+      }
     },
     "Payment": {
       "title": "Оплата",
@@ -704,11 +731,17 @@
       "Table": {
         "payment_code": "Код оплати",
         "product_name ": "Назва продукту",
+        "user": "Користувач",
         "time_date": "Час та дата",
         "status": "Статус",
         "amount": "Сума",
         "null": "",
-        "no_results": "Немає результатів"
+        "offers": "Пропозиції",
+        "no_results": "Немає результатів",
+        "success": "Успішно",
+        "pending": "В очікуванні",
+        "fail": "Не виконано",
+        "cancel": "Відмінено"
       },
       "Empty": {
         "title": "У вас немає оплати!",
@@ -720,6 +753,7 @@
         "status": "Статус",
         "method": "Метод",
         "card_number": "Номер картки",
+        "operation_type": "Тип операції",
         "amount": "Сума",
         "time_date": "Час та дата",
         "product": "Продукт",
@@ -757,6 +791,14 @@
         "fa_enabled_subtitle": "Ваша двофакторна автентикація успішно увімкнена",
         "ok": "Добре"
       }
+    },
+    "Report": {
+      "title": "Звернення",
+      "no_reports": "Звернення відсутні"
+    },
+    "Dashboard": {
+      "title": "Дашбоард",
+      "empty": "Данні відсутні"
     },
     "FinancialBalance": {
       "title": "Фінанси $ Баланс",

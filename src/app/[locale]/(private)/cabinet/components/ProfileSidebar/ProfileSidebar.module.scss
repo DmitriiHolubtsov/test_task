@@ -12,11 +12,8 @@
     &_content {
         overflow-y: auto;
 
-        @media (max-height: em(999)) {
-            max-height: toRem(564);
-        }
         @media (max-height: em(899)) {
-            max-height: toRem(464);
+            max-height: toRem(624);
         }
         @media (max-height: em(799)) {
             max-height: toRem(364);
@@ -143,12 +140,6 @@
 
     &_body {
         padding: toRem(12) toRem(24) toRem(16) toRem(24);
-    }
-
-    &_item {
-        &:not(:first-child) {
-            padding-top: toRem(12);
-        }
     }
 
     &_button {

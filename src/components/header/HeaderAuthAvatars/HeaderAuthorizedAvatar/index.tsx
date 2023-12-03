@@ -7,18 +7,21 @@ import { useAuth } from 'utils/hooks/useAuth';
 import { ROUTES } from 'constants/routes';
 
 import { DropDown } from 'ui/components/DropDown';
-import { TransparentAchiveIcon } from 'components/icons/AchiveIcon';
-import { MessageIcon } from 'components/icons/MessageIcon';
-import { CartIcon } from 'components/icons/CartIcon';
 import { MoonIcon } from 'components/icons/MoonIcon';
-import { FlagIcon } from 'components/icons/FlagIcon';
-import { ExitIcon } from 'components/icons/ExitIcon';
 import { ThemeSwitcher } from 'components/common/ThemeSwitcher';
-import { ProfileIcon } from 'components/icons/ProfileIcon';
 import { UserAvatar } from 'components/common/UserAvatar';
+import { DashboardIcon } from 'components/icons/DashboardIcon';
+import { MessagesIcon } from 'components/icons/MessagesIcon';
+import { SectionsIcon } from 'components/icons/SectionsIcon';
+import { SellerIcon } from 'components/icons/SellerIcon';
+import { BuyersIcon } from 'components/icons/BuyersIcon';
+import { FinancialIcon } from 'components/icons/FinancialIcon';
+import { AchievementIcon } from 'components/icons/AchievementIcon';
+import { KeyIcon } from 'components/icons/KeyIcon';
+import { ReportIcon } from 'components/icons/ReportIcon';
+import { LogoutIcon } from 'components/icons/LogoutIcon';
 
 import s from '../../Header.module.scss';
-import { KeyIcon } from 'components/icons/KeyIcon';
 
 export const HeaderAuthorizedAvatar: FC = () => {
   const t = useTranslations('Header.Dropdowns');
@@ -37,7 +40,41 @@ export const HeaderAuthorizedAvatar: FC = () => {
         title: 'security',
         icon: <KeyIcon />,
         href: ROUTES.PRIVATE.SECURITY,
-      }
+      },
+      {
+        icon: <DashboardIcon />,
+        title: 'dashboard',
+        href: ROUTES.PRIVATE.DASHBOARD,
+      },
+      {
+        icon: <SectionsIcon />,
+        title: 'sections',
+        href: ROUTES.PRIVATE.SECTIONS,
+      },
+      {
+        icon: <SellerIcon />,
+        title: 'seller',
+        href: ROUTES.PRIVATE.SELLER.SALES_OFFERS,
+      },
+      { icon: <BuyersIcon />, title: 'buyers', href: ROUTES.PRIVATE.BUYERS },
+      {
+        icon: <FinancialIcon />,
+        title: 'financial',
+        href: ROUTES.PRIVATE.SELLER.FINANCIAL_BALANCE,
+      },
+      {
+        icon: <AchievementIcon />,
+        title: 'achievement',
+        href: ROUTES.PRIVATE.ACHIEVEMENT,
+      },
+      { icon: <ReportIcon />, title: 'report', href: ROUTES.PRIVATE.REPORT },
+      {
+        icon: <MessagesIcon />,
+        title: 'messages',
+        href: ROUTES.PRIVATE.MESSAGES,
+      },
+
+      { icon: <LogoutIcon />, title: 'logout', href: ROUTES.PRIVATE.LOGOUT },
     ],
   };
 

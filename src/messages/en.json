@@ -585,12 +585,18 @@
       "level": "Lv",
       "confident_lvl": "Confident Lv:",
       "profile": "Profile",
+      "dashboard": "Dashboard",
       "messages": "Messages",
+      "sections": "Sections",
+      "seller": "Seller",
+      "buyers": "Buyers",
+      "financial": "Financial",
       "bought_roducts": "Bought Products",
       "achievement": "Achievement",
+      "security": "Security",
+      "report": "Report",
       "payment": "Payment",
       "notifications": "Notifications",
-      "security": "Security",
       "logout": "Logout",
       "Seller": {
         "financial_balance": "Financial & Balance",
@@ -635,7 +641,12 @@
       },
       "successfully_updated": "Successfully Updated"
     },
+    "Dashboard": {
+      "title": "Dashboard",
+      "empty": "No data"
+    },
     "Messages": {
+      "title": "Messages",
       "search_conversation": "Search Conversation",
       "all_messages": "All Messages",
       "unread_messages": "Unread",
@@ -644,6 +655,23 @@
       "select_converstation_subtitle": "Select a conversation and start to chat",
       "no_converstation": "There is no converstation",
       "no_converstation_subtitle": "Oops! there is no conversation yet, Explore in offers and start chat with sellers"
+    },
+    "Sections": {
+      "title": "Sections",
+      "empty": "No data"
+    },
+    "Buyers": {
+      "title": "Buyers",
+      "no_buyers": "No buyers"
+    },
+    "Achievement": {
+      "title": "Achievement",
+      "empty":"No data",
+      "of": "of"
+    },
+    "Report": {
+      "title": "Report",
+      "no_reports": "No data"
     },
     "BoughtProducts": {
       "title": "Bought Products",
@@ -696,9 +724,12 @@
         }
       }
     },
-    "Achievement": {
-      "title": "Achievement",
-      "of": "of"
+    "Financial": {
+      "title": "Financial",
+      "Empty": {
+        "title": "There is no payment!",
+        "subtitle": "There is no payment yet."
+      }
     },
     "Payment": {
       "title": "Payment",
@@ -721,9 +752,11 @@
       "Table": {
         "payment_code": "Payment Code",
         "product_name ": "Product Name",
+        "user": "User",
         "time_date": "Time & Date",
         "status": "Status",
         "amount": "Amount",
+        "offers": "Offers",
         "null": "",
         "no_results": "No results"
       },
@@ -737,10 +770,15 @@
         "status": "Status",
         "method": "Method",
         "card_number": "Card Number",
+        "operation_type": "Type",
         "amount": "Amount",
         "time_date": "Time & Date",
         "product": "Product",
-        "to_product": "Running"
+        "to_product": "Running",
+        "success": "Success",
+        "pending": "Pending",
+        "fail": "Fail",
+        "cancel": "Cancel"
       }
     },
     "Notifications": {

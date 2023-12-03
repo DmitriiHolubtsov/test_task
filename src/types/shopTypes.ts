@@ -1,5 +1,5 @@
-import { IAchievement, RatingsStats } from 'types/userTypes';
-import { EnumPayment, EnumPaymentStatus, EnumPlatforms } from './enums';
+import { RatingsStats } from 'types/userTypes';
+import { EnumPayment, EnumPaymentStatus, EnumPlatforms, EnumOperationTypes} from './enums';
 
 export interface ISection {
   name: string;
@@ -62,6 +62,7 @@ export interface ILanguages {
 export interface IUserDetail {
   avatarURL: string;
   userName: string;
+  email: string;
 }
 
 export interface IUserDetailWithStats {
@@ -114,6 +115,8 @@ export interface IPurchaseProduct {
     method: EnumPayment;
     paymentCode?: string;
   };
+  type: EnumOperationTypes,
+  bankCard?: string | number;
   price: number;
   productId: {
     id: string;

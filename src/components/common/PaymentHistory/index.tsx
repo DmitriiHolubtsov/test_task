@@ -40,9 +40,6 @@ export const PaymentHistory: FC<PaymentHistoryProps> = ({
 
   return (
     <div>
-      <Section.BlockHeader>
-        <h4>{t('history')}</h4>
-      </Section.BlockHeader>
       <Section.BlockBody>
         <Form onSearch={handleSearch} />
       </Section.BlockBody>

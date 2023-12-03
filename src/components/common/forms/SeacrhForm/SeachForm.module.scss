@@ -3,6 +3,7 @@
 .form {
     @include flexRow(flex-end);
     gap: toRem(24);
+    padding-top: toRem(24);
 
     &_code {
         flex: 1 1 auto;

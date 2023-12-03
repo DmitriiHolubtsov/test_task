@@ -106,3 +106,44 @@
         margin: 0;
     }
 }
+.usersWrapper {
+    display: inline-flex;
+    column-gap: toRem(24);
+    align-items: center;
+    margin-bottom: toRem(24);
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        row-gap: toRem(12);
+        width: 100%;
+        background-color: $blue_pale;
+        padding: toRem(16);
+        border-radius: toRem(16);
+        .userInfo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: toRem(8);
+            img {
+                background-color: $grey;
+                width: toRem(48);
+                height: toRem(48);
+                border-radius: toRem(100);
+                overflow: hidden;
+                text-align: center;
+            }
+            .userData {
+                display: flex;
+                flex-direction: column;
+                span {
+                    color: $dark;
+                    &:first-of-type {
+                        padding-bottom: toRem(4);
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -5,12 +5,14 @@ import { IPurchaseProduct } from 'types/shopTypes';
 
 import { TableButton } from 'components/common/Table/button';
 import { StatusBlock } from 'components/common/StatusBlock';
+import { useTranslations } from 'next-intl';
 
 interface IGetPaymentColumns {
   href: string;
 }
 
 export const getPaymentColumns = ({ href }: IGetPaymentColumns) => {
+  const t = useTranslations('ProfilePage.Payment.Details');
   const columns: Column<any>[] = [
     {
       Header: 'payment_code',
@@ -18,8 +20,8 @@ export const getPaymentColumns = ({ href }: IGetPaymentColumns) => {
       disableSortBy: true,
     },
     {
-      Header: 'product_name ',
-      accessor: (row) => row.productId?.shortDescription?.en,
+      Header: 'user',
+      accessor: (row) => row.soldBy.userName,
       disableSortBy: true,
     },
     {
@@ -54,7 +56,7 @@ export const getPaymentColumns = ({ href }: IGetPaymentColumns) => {
       Cell: ({ value }) => <>${value.toFixed(2)}</>,
     },
     {
-      Header: 'null',
+      Header: 'offers',
       Cell: ({ row }: CellProps<IPurchaseProduct>) => {
         const originalItem = row.original;
 

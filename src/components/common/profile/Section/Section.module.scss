@@ -1,7 +1,7 @@
 @import "constants/constans.scss";
 
 section.section {
-    padding: toRem(24);
+    padding: toRem(24) toRem(0);
 }
 
 .section {
@@ -30,6 +30,7 @@ section.section {
 
     &_header {
         padding-bottom: toRem(24);
+        margin: 0 toRem(24);
         border-bottom: toRem(1) solid $grey_pale;
 
         &_flex {
@@ -43,6 +44,8 @@ section.section {
         @include flexColumn();
         flex: 1 1 auto;
         padding-top: toRem(24);
+        padding-left: toRem(24);
+        padding-right: toRem(24);
     }
 
     &_block {
